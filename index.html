@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calendário</title>
+</head>
+<body>
+    <div id="nav">
+        <button id="previous">Previuous month</button>
+        <span id="currentMonthYear"></span>
+        <button id="next">Next month</button>
+    </div>
+    <div>
+        <label for="month">Select month:</label>
+        <select id="month" onchange="changeMonth()">
+        </select>
+    </div>
+    <div id="yearSelector">
+        <label for="year">Select year:</label>
+        <select id="year" onchange="changeYear()">
+        </select>
+    </div>
+    <div id="calendar"></div>
+    <script src="script.js"></script>
+</body>
+</html>
