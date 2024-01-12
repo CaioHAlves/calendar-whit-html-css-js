@@ -1,17 +1,104 @@
 body {
-  font-family: 'Arial', sans-serif;
-  align-items: center;
+  font-family: "Arial", sans-serif;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background: #C7C7C7;
 }
 
-#yearSelector {
-  margin: 5px 0;
+.container-calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 8px;
+  margin: 10px 0 0 0;
+}
+
+.header {
+  width: 100%;
+  padding: 16px;
+  background: #3015b9;
+  border-radius: 8px 8px 0 0;
+  color: #fff;
+}
+
+#month,
+#year {
+  display: flex;
+  border: none;
+  background: transparent;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 0px;
+  letter-spacing: 1px;
+}
+option {
+  color: #000;
+}
+#year::-webkit-scrollbar {
+  display: none;
+}
+#month-day {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 5px 0 0 0;
+  letter-spacing: 1px;
+}
+
+#content-calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 16px;
+  gap: 20px;
+  background: #FFFFFF;
+  border-radius: 0 0 8px 8px;
+}
+
+.nav-buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.nav-buttons button {
+  display: flex;
+  align-items: center;
+  max-width: 30px;
+  max-height: 30px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+#month {
+  color: #000;
+  font-weight: 600;
+  letter-spacing: 0;
+  font-size: 16px;
 }
 
 #calendar {
-  max-width: 400px;
-  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+tr:first-child {
+  color: #c7c7c7;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+tr {
+  font-weight: 600;
 }
 
 table {
@@ -22,17 +109,14 @@ table {
 th, td {
   padding: 10px;
   text-align: center;
-  border: 1px solid #ddd;
-}
-
-th {
-  background-color: #f2f2f2;
 }
 
 td {
   cursor: pointer;
+  border-radius: 50%;
 }
 
 td:hover {
-  background-color: #f5f5f5;
+  background-color: #3015b9;
+  color: #FFF;
 }
