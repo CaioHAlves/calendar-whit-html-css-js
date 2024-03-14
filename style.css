@@ -5,7 +5,7 @@ body {
   align-items: center;
   margin: 0;
   padding: 0;
-  background: #C7C7C7;
+  background: #c7c7c7;
 }
 
 .container-calendar {
@@ -57,7 +57,7 @@ option {
   width: 100%;
   padding: 16px;
   gap: 20px;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 0 0 8px 8px;
 }
 
@@ -82,6 +82,7 @@ option {
   font-weight: 600;
   letter-spacing: 0;
   font-size: 16px;
+  text-align: center;
 }
 
 #calendar {
@@ -106,7 +107,8 @@ table {
   border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
   padding: 10px;
   text-align: center;
 }
@@ -118,5 +120,5 @@ td {
 
 td:hover {
   background-color: #3015b9;
-  color: #FFF;
+  color: #fff;
 }
